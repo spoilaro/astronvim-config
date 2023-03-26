@@ -75,5 +75,7 @@ return {
     --     ["~/%.config/foo/.*"] = "fooscript",
     --   },
     -- }
+    --
+    -- vim.g.material_style = "darker"
   end,
 }
