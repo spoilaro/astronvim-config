@@ -8,6 +8,12 @@ return {
   n = {
     -- second key is the lefthand side of the map
     -- mappings seen under group name "Buffer"
+
+
+    ["<S-l>"] = { function() require("astronvim.utils.buffer").nav(vim.v.count > 0 and vim.v.count or 1) end, desc =
+    "Next buffer" },
+    ["<S-h>"] = { function() require("astronvim.utils.buffer").nav(-(vim.v.count > 0 and vim.v.count or 1)) end, desc =
+    "Next buffer" },
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>ww"] = { "<cmd>e ~/puheet/NOTES.md<cr>", desc = "Open Notes" },
     ["<leader>bD"] = {
